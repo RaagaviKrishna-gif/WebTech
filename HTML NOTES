@@ -1,0 +1,593 @@
+HTML - Hyper Text Markup Language
+ 
+why HTML is markup language?
+    It is not a programming language .It is just used to create a structure . we not using any logics like programming language.
+
+what is Hypertext?
+    Any text that contain another page link
+               (or)
+    Any text that contain the link of any other webpage is called as Hypertext.
+
+Tags
+    Tags are predefined words enclosed with angular braces/brackets <>
+
+Types of Tags
+   1.Paired Tag.
+   2.Unpaired Tag.
+
+Paired Tags
+   Paired Tag having both opening tag & closing tag.
+         <tagname></tagname>
+  eg: <html></html> , <h></h> , <title></title>
+
+Unpaired Tags
+  This tag having only opening tag ,there is no closing tag.
+  eg: <meta> , <br> ,<hr> , <input>
+
+Structure of HTML
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+ </head>
+  <body>
+  </body>
+</html>
+
+<html></html>     -1. It is a root tag of our html document.
+                   2. All the tags should be written inside the tags.
+
+<head></head>     -1. Tag is used to provide the information about our webpage.
+
+<body></body>     -1. Tag is used to write the code what we want to display on the UI inside it.
+
+<title></title>   -1. Tag is used to provide the name of the webpage/tab.
+
+<!DOCTYPE html>   -1. It is used to know the version of html we are using.
+                   2. current version of html is HTML5.
+
+
+Heading Tag
+
+  Heading Tag is used to provide the headline in HTML ,we have 6 heading tags.
+  They are <h1></h1> to <h6></h6>
+  In this <h1> tag has the bigger size(32px) and <h6> having the Smaller size(10.70px).
+  h1 is Paired tag.
+
+Paragraph Tag
+ 
+   1.Paragraph tag is denoted by <p></p>.
+   2.It is used to write the text content.
+   3.It is Paired tag.
+
+Formatting Tag
+ 
+    These tags are used the format or appearance  of the text content.
+
+   <b>        It is used to make the text bold.
+   <strong>   It is also used to make the text bold.
+              These tag having higher priority/performance to the browser.
+   <u>        It is used to provide underline to the text.
+   <ins>      It is also used to provide underline to the text.
+   <i>        It is used to make the text italic.
+   <em>       It is also used to make the content in italic.
+   <mark>     It is used to highlight the text.
+   <q>        It is used to provide double quotes " ".
+   <del>      It is used to strike the text.
+   <strike>   It is used to provide strike of the text.
+   <sop>      It is used to write any content to the power of text.
+   <sub>      It is used to write any content to the base of the text.
+   <pre>      It is a Performance text that will display the o/p as it is we are writing inside it font will be monospace.
+
+Element
+   Element is combination of tag & content.
+    <tagname> content </tagname>
+
+Types
+  1.Inline Level Element.
+  2.Block Level Element.
+  3.Inline Block Level Element.
+
+Inline Level Element
+   This Element will be displayed in the Same Line.
+   It will take or occupy the content area.
+   We can't provide the height & width in the element.
+   eg: <b></b>, <i></i>, <u></u>
+
+Block Line Element
+   There element take the full width of the parent element.
+   It will display in different lines.
+   Here we can create height & width.
+   eg: heading tags(h1-h6) , <p></p> tag.
+
+Inline Block Level Element
+   It is a combination of inline and block level element.
+   It will display in same line but we can provide height and width.
+   eg: <button></button> , <input></input>
+
+Attributes
+
+   Attributes are used to provide additional/extra information to the tags.
+   we have to write attributes inside the open tag.
+   Attributes are key & value pairs.
+
+Syntax : <tagname attributename="value"></tagname>
+
+br tag
+   It is used to break the line
+   It is Unpaired tag <br>
+
+hr tag
+   It is used to provide horizontal line.
+
+img tag
+   It is used to add a image on a webpage.
+  Attributes:
+    1.src : It is used to provide the path of the webpage.
+    2.alt : It is used to provide alternate message .If the img is not working/loading that time the message will be displayed.
+
+Height & width
+   It is used to resize the image.
+   img tag is unpaired tags.
+   It is inline-block element.
+   eg: <img src="myimg.png" alt="This is my Image" height="200" width="400">
+
+Marquee Tags
+   * This tag is used to scroll the content on the webpage.
+   * By default the content will scroll from right to left side
+   Attributes:
+    1.Direction : Here  we can give the value as right/left/up/down.
+    2.Behavior : Here we can give value as scroll/alternate/slide
+    3.scrollamount : It is used to provide the speed of the scrolling content. Default value is 6.
+    4.Height & width : used to resize the marquee tag area.
+    5.loop : used to define how many times scrolling should happen.
+    eg: <marquee behaviour=="alternate" loop="4" direction="right" height="200"
+        <h1>Good Evening Everyone</h1> width="800" scrollamount="40"></marqee>
+
+   * Marquee tag is Block level element
+   * It is paired tag.
+
+List
+   List is used to group releted element together
+       --3 Types
+     1.Order List
+     2.Unorder List
+     3.Description List
+
+Order List
+    we can create ordered list by using <ol> tag
+    Inside the <ol> tag we have to create all the items by using <li> tags
+    Attributes:
+     1.Type : 1,'a','A','i',I' These are the value we can provide in type attributes.
+     2.start : It is used to specific from where list item value will be started.
+     3.reversed : This is used to display the list items value in reverse order.
+    eg: <ol type="a" start="5" reversed>
+            <li>SQL</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Webtech</li>
+        </ol>
+ 
+    o/p:  h.SQL
+          g.Java
+          f.Python
+          e.Webtech
+
+Unorder List
+    we can create unorder list by using <ul></ul>  tag inside that we have to create element by using <li></li> tag
+    By default all the list items is display with bullet point
+    Attributes:
+      1.type : "disc" , "circle" , "square" ,"none"
+    eg: <ul type="none">
+            <li>SQL</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Webtech</li>
+        </ul>
+
+    o/p:  SQL
+          Java
+          Python
+          Webtech
+
+Description List
+    This list is used to provide the word & the description/meaning of the word.
+     <dl></dl>  It is used to create a description list.
+     <dt></dt>  It is used to provide the term/word
+     <dd></dd>  It is used to provide the definition about the term/word
+      eg: <dl>
+              <dt>HTML</dt>
+              <dd>Hyper Text markup language</dd>
+              <dd>It is used to create a structure of webpage</dd>
+
+     o/p : HTML
+             Hyper Text markup language
+             It is used to create a structure of webpage
+
+
+iframe Tag
+    iframe tag is used to add different webpage into our current webpage
+    It is Inline-block level element
+    It is an unpaired tag
+     Attributes:
+        1.src : It is used to add the path of the webpage we want to add.
+        2.frameborder : It is used to provide the outline/border
+                        Default value is 0
+        3.height & width : It is used to resize the webpage (frame resize)
+    eg: we use to add map & youtube video in our webpage for that we need embeded list.
+
+Heading Tag
+  Table in HTML
+      Table is the combination of rows and columns used to start the data
+      In HTML for creating table we need <table></table> tag
+      For creating rows we need <tr></tr> tag
+      Inside rows if we want to give data ,for that we need <td></td> tag
+      For giving heading data/header in the table we need <th></th> tag
+      For giving the title/caption of the table we need <caption></caption> tag
+        Attributes in Table Tag
+          1.border : used to provide the outline/border of he table
+          2.height & width : used to resize the table
+          3.cellspacing : Intersection of rows & columns is called as cells
+                          cellspacing is used to provide space between the cell
+          4.cellpading : used to provide the space inside the cell between the context of body.
+        Attributes of td & th tag
+          1.colspan : used to combine/merge 2 or more than 2 columns
+                      It works in horizontal direction.
+          2.rowspan : used to combine/merge 2 or more than 2 rows
+                      It works in vertical direction.
+
+Note :
+  we have some extra semantic tag in table
+       they are
+          <thread></head>
+          <tbody></tbody>
+          <tfoot></tfoot>
+
+Div Tag
+    div is one block level element used to group other element in HTML for styling from CSS
+    Inside div tag we can write inline ,block ,inline-block level element
+    It display in the next line of we can provide height & width
+    we can add id & class select bar in the div tag so that we can target it for styling
+     eg: <div id="profile card">
+         <img src="myimg.png" alt="">
+         <p>Raagavi</p>
+         <button>know more info</button>
+         </div>
+
+Span Tag
+    It is one inline level element used to target some part of block level element.
+     eg: <p>My name is<span>Raagavi</span></p>
+
+Multi Media Tag
+    <video> tag
+    This tag is used to add/insert video in our webpage.
+     Attributes:
+        1.src : used to give the part of the video.
+                It we give the correct path video will display but we can't control(play ,pause ,skip) the video.
+        2.controls : It is used to control the video.
+        3.loop : For this attributes ,video will be playing continuously.
+        4.Autoplay : Whenever our page will be loaded video will be start playing automatically if we give this attributes.
+        5.muted : For this attributes the video will be an mute.
+        6.poster : used to provide poster/thumbnail for the video.
+ 
+    <audio> tag
+    It is used to add/insert in our webpage.
+     Attributes:
+         src ,controls ,muted ,autoplay ,loop
+
+Note  :  In audio tag if we are giving src attribute then also audio will not display so for that we should give controls attributes 
+         In video tag w/o controls attributes video will be visible but we can't play/pause/skip the video.
+
+Forms in HTML 
+    Forms in HTML are used to collect user information
+    Forms are block-level element ,while most of the form element inside them are in-line level.
+
+Tags used on Forms:
+    1. <form>
+          It is a semantic element that defined the beginning of the form.
+          It contains all the form-related element
+            eg: <form action="/submit" method="post"></form>
+    2. <label>
+          Specifier the purpose of the input field
+          Its linked to the <input> field using the for attributes ,which match the id of the input element
+            eg: <label for="username">Name</label>
+                <input type="text" id="username">
+    3.<input>
+          Used to collect user data.
+          There are various type such as text ,email ,password ,number.
+            eg: <input type="email" id="usedEmail">
+    4.<select>
+          Creates a dropdown  list from which users can select options.
+            eg: <label for"skills">Skills:</label>
+                <select id="skills:>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                </select>
+    5.<option>
+          Defines the option within a dropdown list.
+    6.<fieldset>
+          Groups form element together and provides a border around them.
+            eg: <fieldset> 
+                     <legend>Personal Information</legend> 
+                     <label for="name">Name:</label> 
+                     <input type="text" id="name"> 
+                </fieldset>
+    7.<legend>
+          Provides a caption for the <fieldset> group.
+    8.<textarea>
+          User to collect multi-line text input.
+          The rows and cols attributes specify the visible height and width.
+            eg: <textarea rows="5" cols="30"></textarea>
+    9.<button>
+          Creates a click able button in the form. It can be used to submit or reset the form based on the type attributes.
+            eg: <button type="submit">Submit</button>
+
+Attributes of the <form> Tag:
+    1.action : Specifies the URL Where form data will be submitted
+        eg: <form action="/submit-data">
+    2.method : Specifies how the data is sent to the server(GET or POST)
+        GET- Sends data in the URL,not secure
+        POST- Sends data Securely in the HTTP body.
+          eg: <form method="post">
+    3.autocomplete
+        Defines whether form inputs should have auto-complete enabled(on or off)
+          eg: <form autocomplete="on">
+
+Attributes of the <input> Tag
+    1.type : Specifies the type of input field (eg: text, email, password, etc..)
+    2.id : Provides a unique identifier for the input element.
+    3.name : Associates  a name with the input field ,used for form submission .
+    4.value : Defines the initial value of the input field.
+    5.required : Makes the field mandatory to fill before submission.
+    6.readonly : Prevents user from modifying the input field value.
+    7.disabled : Disables the input field.
+    8.min ,max ,minlength ,maxlength : Used to define the minimum and maximum values or lengths for input.
+    9.placeholder : Displays a hint text inside the input field.
+
+Values of type Attribute in HTML <input> Tag
+    The type attributes of the <input> tag in HTML determines the kind of input field displayed on the webpage. Here are the common value of the type attribute.
+    1.text 
+        Allows user to enter regular text.
+        Default input type.
+          eg: <input type="text">
+    2.email
+        Used for email input .It automatically validates the input for an email format.
+          eg: <input type="email">
+    3.password
+        Display input as masked characters (dots or asterisks),hiding the user's input.
+          eg: <input type="password">
+    4.number
+        Allows user to enter numerical values. It can have min, max, and step attributes for validation.
+          eg: <input type="number" min="1" max="100" step="1">
+    5.tel
+        Allows users to input telephone numbers. it doesn't enforce specific validation but provides a numeric keyboard on mobile devices.
+          eg: <input type="tel">
+    6.radio
+        Creates a radio button, allowing users to select one option from a group 
+          eg: <input type="radio" name="gender" value="male">Male
+              <input type="radio" name="gender" value="female">Female
+    7.checkbox
+        Creates a checkbox, allowing users to select multiple options independently
+          eg: <input type="checkbox" value="subscribe">Subscribe
+    8.button
+        Create a click able button. Typically, you can use JavaScript to define what happens when it's clicked
+          eg: <input type="button" value="Click Me">
+    9.submit
+        Creates a submit button that submits the form data to the server.
+          eg: <input type="submit" value="Submit Form">
+    10.reset
+        Resets all the form fields to their default values.
+          eg: <input type="reset" value="Reset Form">
+    11.date
+        Allows users to select a date using a date picker.
+          eg: <input type="date">
+    12.time
+        Allows users to select a time.
+          eg: <input type="time">
+    13.week
+        Allows users to select a specific week in a year
+          eg: <input type="week">
+    14.month
+        Allows users to select a specific month and year
+          eg: <input type="month">
+    15.color
+        Allows users to select a color from a color picker
+          eg: <input type="color">
+    16.image
+        Creates a submit button in the form of an image
+          eg: <input type="image" src="submit.png" alt="Submit">
+    17.file
+        Allows user to upload files from their device
+         eg: <input type="file">
+    18.range
+       Creates a slider input that allows users to select a numeric value within a specific range.
+         eg: <input type="range" min="1", max="100">
+
+Hyper Link
+    hyperlink is used to navigate/redirect from one page to Another page or in the same page one section to another section.
+
+    for creating hyperlink we need **Anchor Tag**
+
+    Anchor Tag is denoted by <a> </a> symbol.
+
+    **Attributes**
+    1.href
+         * here we have to pass the path where we want to navigate
+         * eg: <a href="www.facebook.com">Facebook</a>
+         * if we click on the facebook text, it will redirect to facebook page but the page will be open in same tab.
+ 
+   2.target
+         * it is used to decide in which tab the page will open.
+         * By default value is _self  if we want to open in next tab we use _blank.
+
+   3.title
+         * if we use this title attribute then when we will keep the cursor on the hyperlink , it will display the given message.
+
+ div and span Tag  
+
+      <div> Tag (Block-Level Element) 
+        -  The <div> tag is a block-level container used to group elements together for styling and layout purposes. It doesn't inherently have any meaning or style.
+
+      Characteristics: 
+        - Block-level element: Occupies the full width available. 
+        - Can contain any HTML elements such as text, images, other divs, forms, etc. 
+        - Useful for dividing a webpage into sections.  
+      Usage: 
+        - Ideal for creating large structural sections like headers, footers, content areas, and navigation menus. 
+        - Helps in applying CSS styles and JavaScript functionality to groups of elements.          
+
+      <span> Tag (Inline-Level Element)
+        -  The <span> tag is an inline-level container used to group text or other inline elements. Like <div>, it has no default styling or meaning but is useful for applying specific styles to inline content. 
+                    
+      Characteristics: 
+        - Inline-level element: Occupies only the space it needs (doesn't start on a new line). 
+        - Cannot contain block-level elements (like <div>, <h1>, etc.). 
+        - Mainly used for styling a specific part of the text or inline elements. 
+
+      Usage: 
+        - Ideal for applying styles or JavaScript to a small portion of text or elements within a larger block of content. 
+        - Commonly used within paragraphs (<p>) to style or modify part of the text.       
+
+      When to Use: 
+        - Use <div>: When you need to group large sections of content or create page layout structures. 
+        - Use <span>: When you want to apply styles or modify small parts of inline content without affecting the overall layout.  
+                    
+semantic tags 
+
+      Definition: 
+        Semantic tags are HTML elements that clearly describe their meaning both to the browser and to developers.  Unlike non-semantic tag (<div>, <span>), semantic tags provide meaning to the content enclosed within them. 
+
+      Purpose: 
+         The primary purpose of semantic tags is to improve the structure, readability, and accessibility of web pages, making it easier for search engines, screen readers, and developers to understand the layout and content.     
+                     
+      Common Semantic Tags  
+          1. <header>    
+               Definition: 
+                   Represents the introductory section or a group of navigation links in a webpage.     
+               Usage: 
+                   Typically contains logo, site name, and navigation elements.   
+               Example:           
+                       <header>          
+                          <h1>My Website</h1>          
+                              <nav>              
+                                 <a href="#">Home</a>              
+                                 <a href="#">About</a>              
+                                 <a href="#">Contact</a>          
+                              </nav>      
+                        </header> 
+                             
+          2. <nav>    
+               Definition: 
+                   Represents a section of the page that links to other pages or to parts within the same page.      
+               Usage: 
+                   Usually used for navigation bars or menus.     
+               Example:           
+                  <nav>          
+                     <ul>              
+                       <li><a href="#">Home</a></li>              
+                       <li><a href="#">Services</a></li>              
+                       <li><a href="#">Contact</a></li>          
+                     </ul>      
+                  </nav>
+                          
+          3. <main>    
+               Definition:  
+                  Represents the main content of the webpage that is unique to the document, excluding headers, footers, and sidebars.    
+               Usage:  
+                  Used for the central content of the webpage.    
+               Example:           
+                 <main>          
+                    <h2>Welcome to Our Website</h2>          
+                    <p>This is the primary content of the page.</p>      
+                 </main>
+                          
+          4. <article>    
+               Definition:  
+                  Represents an independent piece of content that could be independently distributed or reused, such as blog posts, news articles, or user comments.    
+               Usage: 
+                  Used for self-contained, reusable content.    
+               Example:           
+                  <article>          
+                     <h3>Blog Post Title</h3>          
+                     <p>This is a blog post description.</p>      
+                  </article>        
+                                
+          5. <section>    
+               Definition:  
+                  Represents a generic section of a document or application. Used to group related content together.    
+               Usage: 
+                  Used for thematic grouping of content.    
+               Example:            
+                 <section>          
+                     <h2>Our Services</h2>          
+                     <p>We provide high-quality services to our customers.</p>      
+                 </section> 
+                                  
+          6. <aside>    
+               Definition: 
+                  Represents content that is tangentially related to the content around it, such as sidebars or pull quotes.    
+               Usage: 
+                 Typically used for supplementary content.    
+                Example:           
+                    <aside>          
+                       <h4>Related Articles</h4>          
+                       <p>Check out these articles for more information.</p>      
+                    </aside>   
+
+          7. <footer>    
+                      Definition: 
+                              Represents the footer of a section or page, typically containing copyright information, links to privacy policies, or contact details.    
+                      Usage: 
+                              Found at the bottom of the page or section.    
+                                 Example:      
+                                 <footer>          
+                                     <p>&copy; 2024 My Website. All rights reserved.</p>     
+                                  </footer> 
+                                  
+          8. <figure>    
+                      Definition: 
+                               Represents self-contained content, like images, diagrams, or illustrations, along with their caption.    
+                      Usage: 
+                               Used for media elements with captions.    
+                                 Example:           
+                                 <figure>          
+                                    <img src="image.jpg" alt="A beautiful scenery">          
+                                    <figcaption>Beautiful mountain scenery at sunrise.</figcaption>      
+                                  </figure>        
+          9. <figcaption>    
+                      Definition: Used to define a caption for a <figure> element.    
+                      Usage: Describes or gives context to the content within the <figure>.    
+                           Example: (See the example for <figure> above)  
+                            
+          10. <mark>     
+                      Definition: Represents text that has been highlighted for reference purposes.     
+                      Usage: Used to emphasize or highlight parts of the text.     
+                          Example:             
+                            <p>The most <mark>important</mark> part of this paragraph is marked.</p> 
+
+          11. <details>  
+                      Definition: 
+                             The <details> tag is used to create a collapsible section that users can open and close to reveal or hide additional information
+                      Purpose: 
+                             Provides a way to display optional or hidden information, which can be toggled by the user. 
+                      Behavior: 
+                              By default, the content inside the <details> tag is hidden, but it can be revealed when the user clicks on it.    
+                      Syntax:   
+                         <details>       
+                             <summary>Click to view more details</summary>       
+                             <p>This is additional information that can be toggled.</p>   
+                          </details>    
+                          
+          12. <summary>  
+                      Definition: 
+                             The <summary> tag is used inside the <details> tag to provide a heading or summary of the content that can be toggled. 
+                      Purpose: 
+                             Acts as a label or title that is clickable, and clicking on it reveals or hides the associated content. 
+                      Behavior: 
+                             It is always visible and is used to control the visibility of the rest of the content within the <details> tag.  
+                      Syntax:      
+                           <details>       
+                                <summary>Click here for details</summary>       
+                                <p>Hidden content goes here.</p>  
+                            </details>      
